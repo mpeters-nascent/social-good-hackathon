@@ -11,17 +11,51 @@ import UIKit
 class PostControllerViewController: UIViewController {
 
     @IBOutlet weak var encouragement: UITextView!
+    @IBOutlet weak var embarrassment: UITextView!
+    @IBOutlet var postView: UIView!
+    
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-encouragement.layer.borderWidth = CGFloat(5.0)
-        encouragement.layer.borderColor = UIColor.blackColor().CGColor
+encouragement.layer.borderWidth = CGFloat(1.0)
+        embarrassment.layer.borderWidth = CGFloat(1.0)
+        encouragement.layer.borderColor = UIColor.grayColor().CGColor
+        embarrassment.layer.borderColor = UIColor.grayColor().CGColor
+        
+        encouragement.layer.cornerRadius = CGFloat(5.0)
+        encouragement.clipsToBounds = true
+        embarrassment.layer.cornerRadius = CGFloat(5.0)
+        embarrassment.clipsToBounds = true
+        
+        var background = UIImage(imageLiteral: "English_Summer_Forest.jpg")
+        
+        //applyBlurEffect(background)
+        
+        var imageToBlur = CIImage(image: background)
+        var blurfilter = CIFilter(name: "CIGaussianBlur")
+        blurfilter!.setValue(imageToBlur, forKey: "inputImage")
+        var resultImage = blurfilter!.valueForKey("outputImage") as! CIImage
+        var blurredImage = UIImage(CIImage: resultImage)
+        self.backgroundImage.layer.zPosition = CGFloat(-1)
+        self.backgroundImage.image = blurredImage
+        //self.view.backgroundColor = UIColor(patternImage: blurredImage)
+        
+        //postView.layer.contents = background
         
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func applyBlurEffect(image: UIImage){
+        var imageToBlur = CIImage(image: image)
+        var blurfilter = CIFilter(name: "CIGaussianBlur")
+        blurfilter!.setValue(imageToBlur, forKey: "inputImage")
+        var resultImage = blurfilter!.valueForKey("outputImage") as! CIImage
+        var blurredImage = UIImage(CIImage: resultImage)
+        //self.backgroundImage.image = blurredImage
+        self.view.backgroundColor = UIColor(patternImage: blurredImage)
+        
     }
     
 

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Post Controller View Controller-->
@@ -17,32 +18,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfx-ol-pxr">
-                                <rect key="frame" x="260" y="474" width="81" height="30"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iMG-su-57n">
+                                <rect key="frame" x="-128" y="-75" width="884" height="867"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfx-ol-pxr">
+                                <rect key="frame" x="260" y="550" width="81" height="30"/>
                                 <state key="normal" title="Post Button"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fyr-27-prp">
-                                <rect key="frame" x="180" y="184" width="240" height="182"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyr-27-prp">
+                                <rect key="frame" x="180" y="120" width="240" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="fkc-TI-Bmy"/>
+                                    <constraint firstAttribute="width" constant="240" id="pAk-Zo-YLv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-TI-1Un">
+                                <rect key="frame" x="180" y="382" width="240" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5ft-XD-ZpH"/>
+                                    <constraint firstAttribute="height" constant="120" id="LWJ-pm-gPc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFX-8i-Gm2">
+                                <rect key="frame" x="180" y="58" width="232.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="EpW-Gu-0dY"/>
+                                </constraints>
+                                <string key="text">Something that you might say 
+to someone that you respect:</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C74-Qv-zRg">
+                                <rect key="frame" x="180" y="311" width="268" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="25C-JS-fil"/>
+                                </constraints>
+                                <string key="text">Something about yourself that you 
+don't feel you have in common 
+with other people:</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Fyr-27-prp" firstAttribute="centerX" secondItem="Y50-tI-S2R" secondAttribute="centerX" id="1qx-fi-yvH"/>
+                            <constraint firstItem="OFX-8i-Gm2" firstAttribute="leading" secondItem="Fyr-27-prp" secondAttribute="leading" id="CkS-GC-T06"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fyr-27-prp" secondAttribute="trailing" constant="100" id="EvQ-IC-zmI"/>
+                            <constraint firstItem="ZsQ-TI-1Un" firstAttribute="top" secondItem="C74-Qv-zRg" secondAttribute="bottom" constant="8" id="HKZ-Ed-5jB"/>
+                            <constraint firstItem="Fyr-27-prp" firstAttribute="top" secondItem="oy9-rk-eVT" secondAttribute="bottom" constant="100" id="QqL-YR-aHc"/>
+                            <constraint firstItem="Fyr-27-prp" firstAttribute="centerY" secondItem="Y50-tI-S2R" secondAttribute="centerY" id="V03-Dx-WLs"/>
+                            <constraint firstItem="ZfK-s4-acp" firstAttribute="top" secondItem="gfx-ol-pxr" secondAttribute="bottom" constant="20" id="XDy-hn-wmJ"/>
+                            <constraint firstItem="Fyr-27-prp" firstAttribute="top" secondItem="OFX-8i-Gm2" secondAttribute="bottom" constant="20" id="Zhd-4R-gNo"/>
+                            <constraint firstItem="Fyr-27-prp" firstAttribute="centerX" secondItem="Y50-tI-S2R" secondAttribute="centerX" id="b2O-q6-3hL"/>
+                            <constraint firstItem="ZfK-s4-acp" firstAttribute="top" secondItem="ZsQ-TI-1Un" secondAttribute="bottom" constant="98" id="cBK-h5-PxL"/>
+                            <constraint firstItem="ZfK-s4-acp" firstAttribute="top" secondItem="Fyr-27-prp" secondAttribute="bottom" constant="160" id="fnZ-th-pMi"/>
                             <constraint firstItem="ZfK-s4-acp" firstAttribute="top" secondItem="gfx-ol-pxr" secondAttribute="bottom" constant="100" id="hhF-Sh-Net"/>
                             <constraint firstItem="gfx-ol-pxr" firstAttribute="centerY" secondItem="Y50-tI-S2R" secondAttribute="centerY" id="jhD-Ks-QIY"/>
+                            <constraint firstItem="ZsQ-TI-1Un" firstAttribute="centerX" secondItem="Y50-tI-S2R" secondAttribute="centerX" id="thM-d7-8oP"/>
                             <constraint firstItem="gfx-ol-pxr" firstAttribute="centerX" secondItem="Y50-tI-S2R" secondAttribute="centerX" id="xNE-jQ-sPA"/>
+                            <constraint firstItem="Fyr-27-prp" firstAttribute="centerX" secondItem="Y50-tI-S2R" secondAttribute="centerX" id="yXc-sD-4UW"/>
+                            <constraint firstItem="Fyr-27-prp" firstAttribute="leading" secondItem="Y50-tI-S2R" secondAttribute="leadingMargin" constant="100" id="yl5-Ih-DqL"/>
+                            <constraint firstItem="C74-Qv-zRg" firstAttribute="leading" secondItem="ZsQ-TI-1Un" secondAttribute="leading" id="zwC-eA-CdJ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="1qx-fi-yvH"/>
+                                <exclude reference="EvQ-IC-zmI"/>
+                                <exclude reference="V03-Dx-WLs"/>
+                                <exclude reference="yXc-sD-4UW"/>
+                                <exclude reference="yl5-Ih-DqL"/>
+                                <exclude reference="fnZ-th-pMi"/>
+                                <exclude reference="hhF-Sh-Net"/>
                                 <exclude reference="jhD-Ks-QIY"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="iMG-su-57n" id="Be5-Uv-TmT"/>
+                        <outlet property="embarrassment" destination="ZsQ-TI-1Un" id="Zol-1n-srH"/>
                         <outlet property="encouragement" destination="Fyr-27-prp" id="5V4-Sc-ZLv"/>
+                        <outlet property="postView" destination="Y50-tI-S2R" id="m2f-7X-ptT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hZ-3x-LlT" userLabel="First Responder" sceneMemberID="firstResponder"/>

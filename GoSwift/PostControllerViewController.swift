@@ -10,9 +10,12 @@ import UIKit
 
 class PostControllerViewController: UIViewController {
 
+    @IBOutlet weak var encouragement: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+encouragement.layer.borderWidth = CGFloat(5.0)
+        encouragement.layer.borderColor = UIColor.blackColor().CGColor
+        
         // Do any additional setup after loading the view.
     }
 

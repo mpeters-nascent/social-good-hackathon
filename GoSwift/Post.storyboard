@@ -16,8 +16,34 @@
                     <view key="view" contentMode="scaleToFill" id="Y50-tI-S2R">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfx-ol-pxr">
+                                <rect key="frame" x="260" y="474" width="81" height="30"/>
+                                <state key="normal" title="Post Button"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fyr-27-prp">
+                                <rect key="frame" x="180" y="184" width="240" height="182"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZfK-s4-acp" firstAttribute="top" secondItem="gfx-ol-pxr" secondAttribute="bottom" constant="100" id="hhF-Sh-Net"/>
+                            <constraint firstItem="gfx-ol-pxr" firstAttribute="centerY" secondItem="Y50-tI-S2R" secondAttribute="centerY" id="jhD-Ks-QIY"/>
+                            <constraint firstItem="gfx-ol-pxr" firstAttribute="centerX" secondItem="Y50-tI-S2R" secondAttribute="centerX" id="xNE-jQ-sPA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jhD-Ks-QIY"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="encouragement" destination="Fyr-27-prp" id="5V4-Sc-ZLv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hZ-3x-LlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

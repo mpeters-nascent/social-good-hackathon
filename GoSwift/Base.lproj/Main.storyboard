@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MSM-jO-acg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Shareapy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,11 +65,14 @@
                             <constraint firstItem="uWy-fn-Jpj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="vOw-9C-p19"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Shareapy" id="1VV-VY-IfH">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Qsi-8B-tA0"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="387"/>
+            <point key="canvasLocation" x="1117" y="387"/>
         </scene>
         <!--Post-->
         <scene sceneID="igN-bn-FdM">
@@ -77,7 +80,25 @@
                 <viewControllerPlaceholder storyboardIdentifier="post" storyboardName="Post" id="WhS-TO-07u" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAL-UM-9BH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="296"/>
+            <point key="canvasLocation" x="1386" y="296"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Iya-97-0Qc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MSM-jO-acg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" alpha="0.65000000000000002" contentMode="scaleToFill" id="8Ay-49-tgl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jgh-L5-T3h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eX2-oU-UQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
 </document>

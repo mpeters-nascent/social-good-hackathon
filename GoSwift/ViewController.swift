@@ -9,17 +9,45 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var myFirstLabel: UILabel!
+    @IBAction func getWeather(sender: UIButton) {
+        WeatherService.sharedInstance.getWeatherForCity("toronto", completion: {
+            weather in
+            
+            print("\(weather)")
+        })
+    }
+    
+    private let randomWords = ["Marc", "porpoise", "whale", "pickles", "circus tent"]
+    private var counter = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func changeLabelText(sender: AnyObject) {
+        let button = sender as? UIButton
+        button?.tintColor = UIColor.redColor()
+        
+        if let buttonB = sender as? UIButton {
+            buttonB.tintColor=UIColor.greenColor()
+        }
+        
+        guard let buttonC = sender as? UIButton else {
+            return;
+        }
+        
+        buttonC.tintColor = UIColor.orangeColor()
+        myFirstLabel.text = randomWords[counter]
+        counter++
+        if counter >= randomWords.count {
+            counter = 0
+        }
+        
     }
-
-
+    
 }
 

@@ -22,52 +22,53 @@
                                 <rect key="frame" x="-128" y="-75" width="884" height="867"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfx-ol-pxr">
-                                <rect key="frame" x="260" y="550" width="81" height="30"/>
-                                <state key="normal" title="Post Button"/>
+                                <rect key="frame" x="247.5" y="550" width="105" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="asfsdf"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="   Post Button   "/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyr-27-prp">
-                                <rect key="frame" x="180" y="120" width="240" height="120"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyr-27-prp">
+                                <rect key="frame" x="150" y="120" width="300" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="fkc-TI-Bmy"/>
-                                    <constraint firstAttribute="width" constant="240" id="pAk-Zo-YLv"/>
+                                    <constraint firstAttribute="height" constant="160" id="fkc-TI-Bmy"/>
+                                    <constraint firstAttribute="width" constant="300" id="pAk-Zo-YLv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-TI-1Un">
-                                <rect key="frame" x="180" y="382" width="240" height="120"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="5ft-XD-ZpH"/>
-                                    <constraint firstAttribute="height" constant="120" id="LWJ-pm-gPc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFX-8i-Gm2">
-                                <rect key="frame" x="180" y="58" width="232.5" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share something good that you saw today:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFX-8i-Gm2">
+                                <rect key="frame" x="150" y="70" width="300" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="EpW-Gu-0dY"/>
+                                    <constraint firstAttribute="width" constant="300" id="fmh-tM-QBV"/>
                                 </constraints>
-                                <string key="text">Something that you might say 
-to someone that you respect:</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C74-Qv-zRg">
-                                <rect key="frame" x="180" y="311" width="268" height="63"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something about yourself that you don't feel you have in common with other people:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C74-Qv-zRg">
+                                <rect key="frame" x="150" y="271" width="300" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="25C-JS-fil"/>
+                                    <constraint firstAttribute="width" constant="300" id="n3x-Rg-X2u"/>
                                 </constraints>
-                                <string key="text">Something about yourself that you 
-don't feel you have in common 
-with other people:</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-TI-1Un">
+                                <rect key="frame" x="150" y="342" width="300" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5ft-XD-ZpH"/>
+                                    <constraint firstAttribute="height" constant="160" id="LWJ-pm-gPc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -78,7 +79,7 @@ with other people:</string>
                             <constraint firstItem="Fyr-27-prp" firstAttribute="top" secondItem="oy9-rk-eVT" secondAttribute="bottom" constant="100" id="QqL-YR-aHc"/>
                             <constraint firstItem="Fyr-27-prp" firstAttribute="centerY" secondItem="Y50-tI-S2R" secondAttribute="centerY" id="V03-Dx-WLs"/>
                             <constraint firstItem="ZfK-s4-acp" firstAttribute="top" secondItem="gfx-ol-pxr" secondAttribute="bottom" constant="20" id="XDy-hn-wmJ"/>
-                            <constraint firstItem="Fyr-27-prp" firstAttribute="top" secondItem="OFX-8i-Gm2" secondAttribute="bottom" constant="20" id="Zhd-4R-gNo"/>
+                            <constraint firstItem="Fyr-27-prp" firstAttribute="top" secondItem="OFX-8i-Gm2" secondAttribute="bottom" constant="8" id="Zhd-4R-gNo"/>
                             <constraint firstItem="Fyr-27-prp" firstAttribute="centerX" secondItem="Y50-tI-S2R" secondAttribute="centerX" id="b2O-q6-3hL"/>
                             <constraint firstItem="ZfK-s4-acp" firstAttribute="top" secondItem="ZsQ-TI-1Un" secondAttribute="bottom" constant="98" id="cBK-h5-PxL"/>
                             <constraint firstItem="ZfK-s4-acp" firstAttribute="top" secondItem="Fyr-27-prp" secondAttribute="bottom" constant="160" id="fnZ-th-pMi"/>
@@ -107,6 +108,7 @@ with other people:</string>
                         <outlet property="backgroundImage" destination="iMG-su-57n" id="Be5-Uv-TmT"/>
                         <outlet property="embarrassment" destination="ZsQ-TI-1Un" id="Zol-1n-srH"/>
                         <outlet property="encouragement" destination="Fyr-27-prp" id="5V4-Sc-ZLv"/>
+                        <outlet property="postButton" destination="gfx-ol-pxr" id="gWm-cB-WwE"/>
                         <outlet property="postView" destination="Y50-tI-S2R" id="m2f-7X-ptT"/>
                     </connections>
                 </viewController>

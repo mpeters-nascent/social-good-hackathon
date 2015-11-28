@@ -16,6 +16,7 @@ class PostControllerViewController: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
     
+    @IBOutlet weak var postButton: UIButton!
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -29,20 +30,27 @@ encouragement.layer.borderWidth = CGFloat(1.0)
         embarrassment.layer.cornerRadius = CGFloat(5.0)
         embarrassment.clipsToBounds = true
         
-        var background = UIImage(imageLiteral: "English_Summer_Forest.jpg")
+        var background = UIImage(imageLiteral: "English_Summer_Forest_blurred.jpeg")
         
-        //applyBlurEffect(background)
+//        var imageToBlur = CIImage(image: background)
+//        var blurfilter = CIFilter(name: "CIGaussianBlur")
+//        blurfilter!.setValue(imageToBlur, forKey: "inputImage")
+//        var resultImage = blurfilter!.valueForKey("outputImage") as! CIImage
+//        var blurredImage = UIImage(CIImage: resultImage)
+          //self.backgroundImage.layer.zPosition = CGFloat(-1)
+//        self.backgroundImage.image = blurredImage
         
-        var imageToBlur = CIImage(image: background)
-        var blurfilter = CIFilter(name: "CIGaussianBlur")
-        blurfilter!.setValue(imageToBlur, forKey: "inputImage")
-        var resultImage = blurfilter!.valueForKey("outputImage") as! CIImage
-        var blurredImage = UIImage(CIImage: resultImage)
-        self.backgroundImage.layer.zPosition = CGFloat(-1)
-        self.backgroundImage.image = blurredImage
-        //self.view.backgroundColor = UIColor(patternImage: blurredImage)
+        backgroundImage.image = background
+//        let blur = UIBlurEffect(style: .Light)
+//        let effectView = UIVisualEffectView(effect: blur)
+//        effectView.frame = backgroundImage.frame
+//        view.addSubview(effectView)
+//        //view.bringSubviewToFront(effectView)
+//        view.sendSubviewToBack(effectView)
+        view.sendSubviewToBack(backgroundImage)
         
-        //postView.layer.contents = background
+        postButton.layer.cornerRadius = CGFloat(15)
+        
         
         // Do any additional setup after loading the view.
     }

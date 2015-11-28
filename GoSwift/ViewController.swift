@@ -33,8 +33,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func navButtonPressed(sender: AnyObject) {
-        let postView = storyboard!.instantiateViewControllerWithIdentifier("post")
-        self.navigationController?.pushViewController(postView, animated: true)
+//        let postView = storyboard!.instantiateViewControllerWithIdentifier("post")
+//        self.navigationController?.pushViewController(postView, animated: true)
     }
     
     @IBAction func changeLabelText(sender: AnyObject) {

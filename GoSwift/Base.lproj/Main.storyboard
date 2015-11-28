@@ -38,6 +38,14 @@
                                     <action selector="getWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lGe-Q7-wlf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evq-j1-c9p">
+                                <rect key="frame" x="137" y="168" width="103" height="30"/>
+                                <state key="normal" title="NavButton"/>
+                                <connections>
+                                    <action selector="navButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h6c-6Q-Iwx"/>
+                                    <segue destination="WhS-TO-07u" kind="show" identifier="post" id="gOf-8Y-BG3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -54,6 +62,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="igN-bn-FdM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="post" storyboardName="Post" id="WhS-TO-07u" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAL-UM-9BH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="296"/>
         </scene>
     </scenes>
 </document>

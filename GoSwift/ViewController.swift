@@ -27,6 +27,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func navButtonPressed(sender: AnyObject) {
+        let postView = storyboard!.instantiateViewControllerWithIdentifier("post")
+        self.navigationController?.pushViewController(postView, animated: true)
+    }
     
     @IBAction func changeLabelText(sender: AnyObject) {
         let button = sender as? UIButton

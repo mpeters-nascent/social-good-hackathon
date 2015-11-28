@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0624F9761C0A0877008A062A /* PostControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624F9751C0A0877008A062A /* PostControllerViewController.swift */; };
+		0624F9781C0A08A3008A062A /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0624F9771C0A08A3008A062A /* Post.storyboard */; };
 		062EBF451C0932210011BF25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062EBF441C0932210011BF25 /* AppDelegate.swift */; };
 		062EBF471C0932210011BF25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062EBF461C0932210011BF25 /* ViewController.swift */; };
 		062EBF4A1C0932210011BF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062EBF481C0932210011BF25 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0624F9751C0A0877008A062A /* PostControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostControllerViewController.swift; sourceTree = "<group>"; };
+		0624F9771C0A08A3008A062A /* Post.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		062EBF411C0932210011BF25 /* GoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062EBF441C0932210011BF25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		062EBF461C0932210011BF25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				062EBF4B1C0932210011BF25 /* Assets.xcassets */,
 				062EBF4D1C0932210011BF25 /* LaunchScreen.storyboard */,
 				062EBF501C0932210011BF25 /* Info.plist */,
+				0624F9751C0A0877008A062A /* PostControllerViewController.swift */,
+				0624F9771C0A08A3008A062A /* Post.storyboard */,
 			);
 			path = GoSwift;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0624F9781C0A08A3008A062A /* Post.storyboard in Resources */,
 				062EBF4F1C0932210011BF25 /* LaunchScreen.storyboard in Resources */,
 				062EBF4C1C0932210011BF25 /* Assets.xcassets in Resources */,
 				062EBF4A1C0932210011BF25 /* Main.storyboard in Resources */,
@@ -223,6 +230,7 @@
 			files = (
 				062EBF471C0932210011BF25 /* ViewController.swift in Sources */,
 				06EAEF701C0941B000B22095 /* WeatherService.swift in Sources */,
+				0624F9761C0A0877008A062A /* PostControllerViewController.swift in Sources */,
 				062EBF451C0932210011BF25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

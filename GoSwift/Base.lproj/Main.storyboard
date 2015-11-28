@@ -50,6 +50,16 @@
                                     <segue destination="WhS-TO-07u" kind="show" identifier="post" id="gOf-8Y-BG3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaI-KA-0Qj">
+                                <rect key="frame" x="116" y="72" width="103" height="30"/>
+                                <animations/>
+                                <state key="normal" title="GET"/>
+                                <connections>
+                                    <action selector="goNavButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6yY-PN-6uP"/>
+                                    <action selector="navButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VHc-kv-3JO"/>
+                                    <segue destination="EdX-8N-rAO" kind="show" identifier="get" id="scE-Br-dpd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -75,7 +85,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="post" storyboardName="Post" id="WhS-TO-07u" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAL-UM-9BH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="296"/>
+            <point key="canvasLocation" x="743" y="220"/>
+        </scene>
+        <!--Get-->
+        <scene sceneID="QiL-zh-wwD">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="get" storyboardName="Get" id="EdX-8N-rAO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCi-Bw-ECN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="344"/>
         </scene>
     </scenes>
 </document>

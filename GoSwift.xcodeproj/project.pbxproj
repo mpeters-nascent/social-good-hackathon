@@ -15,8 +15,10 @@
 		062EBF4C1C0932210011BF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062EBF4B1C0932210011BF25 /* Assets.xcassets */; };
 		062EBF4F1C0932210011BF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062EBF4D1C0932210011BF25 /* LaunchScreen.storyboard */; };
 		06EAEF701C0941B000B22095 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAEF6F1C0941B000B22095 /* WeatherService.swift */; };
+		11018FBC1C0A53EE00DF15CD /* stories.json in Resources */ = {isa = PBXBuildFile; fileRef = 11018FBB1C0A53ED00DF15CD /* stories.json */; };
 		117A1C451C0A132500C2DF59 /* GetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A1C441C0A132500C2DF59 /* GetViewController.swift */; };
 		117A1C471C0A134100C2DF59 /* Get.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117A1C461C0A134100C2DF59 /* Get.storyboard */; };
+		11A6BFC21C0A531C00B25513 /* Pods.framework in Resources */ = {isa = PBXBuildFile; fileRef = 8CE0D52483E8DC138B61E09A /* Pods.framework */; };
 		984B3D11CCCD075A1DC50A34 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE0D52483E8DC138B61E09A /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,7 @@
 		062EBF4E1C0932210011BF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		062EBF501C0932210011BF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06EAEF6F1C0941B000B22095 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		11018FBB1C0A53ED00DF15CD /* stories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stories.json; sourceTree = SOURCE_ROOT; };
 		117A1C441C0A132500C2DF59 /* GetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetViewController.swift; sourceTree = "<group>"; };
 		117A1C461C0A134100C2DF59 /* Get.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Get.storyboard; sourceTree = "<group>"; };
 		1627E4612E6CC43B8FD69CF8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		062EBF431C0932210011BF25 /* GoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				11018FBB1C0A53ED00DF15CD /* stories.json */,
 				117A1C491C0A13AF00C2DF59 /* Views */,
 				117A1C481C0A139900C2DF59 /* Controllers */,
 				06EAEF6E1C09418C00B22095 /* Services */,
@@ -189,10 +193,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A6BFC21C0A531C00B25513 /* Pods.framework in Resources */,
 				0624F9781C0A08A3008A062A /* Post.storyboard in Resources */,
 				117A1C471C0A134100C2DF59 /* Get.storyboard in Resources */,
 				062EBF4F1C0932210011BF25 /* LaunchScreen.storyboard in Resources */,
 				062EBF4C1C0932210011BF25 /* Assets.xcassets in Resources */,
+				11018FBC1C0A53EE00DF15CD /* stories.json in Resources */,
 				062EBF4A1C0932210011BF25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

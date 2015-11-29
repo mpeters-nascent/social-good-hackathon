@@ -1,13 +1,22 @@
 {
     "stories" : [
                  {
-        "name": "Hello World"
+        "name": "Hello World",
+        "location": "Kentucky, USA",
+        "encouragement": "Test",
+        "embarrassment": "Test"
     },
     {
-       "name": "Hello World2"
+       "name": "Hello World2",
+        "location": "Kelowna, BC, Canada",
+        "encouragement": "Test",
+        "embarrassment": "Test"
     },
     {
-       "name": "Hello World3"
+        "name": "Hello World3",
+        "location": "Worcestershire, UK",
+        "encouragement": "Test",
+        "embarrassment": "Test"
     }
    ]
 

@@ -17,6 +17,7 @@
 		062EBF4A1C0932210011BF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062EBF481C0932210011BF25 /* Main.storyboard */; };
 		062EBF4C1C0932210011BF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062EBF4B1C0932210011BF25 /* Assets.xcassets */; };
 		062EBF4F1C0932210011BF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062EBF4D1C0932210011BF25 /* LaunchScreen.storyboard */; };
+		0631A5871C0B74BA008E7FA8 /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 0631A5861C0B74BA008E7FA8 /* tree.png */; };
 		066599F61C0B54BF00524FF9 /* splash2.png in Resources */ = {isa = PBXBuildFile; fileRef = 066599F51C0B54BF00524FF9 /* splash2.png */; };
 		06EAEF701C0941B000B22095 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAEF6F1C0941B000B22095 /* WeatherService.swift */; };
 		11018FBC1C0A53EE00DF15CD /* stories.json in Resources */ = {isa = PBXBuildFile; fileRef = 11018FBB1C0A53ED00DF15CD /* stories.json */; };
@@ -39,6 +40,7 @@
 		062EBF4B1C0932210011BF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062EBF4E1C0932210011BF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		062EBF501C0932210011BF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0631A5861C0B74BA008E7FA8 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
 		066599F51C0B54BF00524FF9 /* splash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash2.png; sourceTree = "<group>"; };
 		06EAEF6F1C0941B000B22095 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		11018FBB1C0A53ED00DF15CD /* stories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stories.json; sourceTree = SOURCE_ROOT; };
@@ -88,6 +90,7 @@
 				06EAEF6E1C09418C00B22095 /* Services */,
 				062EBF4B1C0932210011BF25 /* Assets.xcassets */,
 				0624F9791C0A2422008A062A /* English_Summer_Forest.jpg */,
+				0631A5861C0B74BA008E7FA8 /* tree.png */,
 				066599F51C0B54BF00524FF9 /* splash2.png */,
 				0624F97F1C0A3F21008A062A /* splash.jpg */,
 				0624F97D1C0A337B008A062A /* English_Summer_Forest_blurred.jpeg */,
@@ -216,6 +219,7 @@
 				11018FBC1C0A53EE00DF15CD /* stories.json in Resources */,
 				062EBF4A1C0932210011BF25 /* Main.storyboard in Resources */,
 				0624F97A1C0A2422008A062A /* English_Summer_Forest.jpg in Resources */,
+				0631A5871C0B74BA008E7FA8 /* tree.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

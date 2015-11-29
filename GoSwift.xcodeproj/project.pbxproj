@@ -17,6 +17,7 @@
 		062EBF4A1C0932210011BF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062EBF481C0932210011BF25 /* Main.storyboard */; };
 		062EBF4C1C0932210011BF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062EBF4B1C0932210011BF25 /* Assets.xcassets */; };
 		062EBF4F1C0932210011BF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062EBF4D1C0932210011BF25 /* LaunchScreen.storyboard */; };
+		066599F61C0B54BF00524FF9 /* splash2.png in Resources */ = {isa = PBXBuildFile; fileRef = 066599F51C0B54BF00524FF9 /* splash2.png */; };
 		06EAEF701C0941B000B22095 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAEF6F1C0941B000B22095 /* WeatherService.swift */; };
 		11018FBC1C0A53EE00DF15CD /* stories.json in Resources */ = {isa = PBXBuildFile; fileRef = 11018FBB1C0A53ED00DF15CD /* stories.json */; };
 		117A1C451C0A132500C2DF59 /* GetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A1C441C0A132500C2DF59 /* GetViewController.swift */; };
@@ -38,6 +39,7 @@
 		062EBF4B1C0932210011BF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062EBF4E1C0932210011BF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		062EBF501C0932210011BF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		066599F51C0B54BF00524FF9 /* splash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash2.png; sourceTree = "<group>"; };
 		06EAEF6F1C0941B000B22095 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		11018FBB1C0A53ED00DF15CD /* stories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stories.json; sourceTree = SOURCE_ROOT; };
 		117A1C441C0A132500C2DF59 /* GetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				062EBF441C0932210011BF25 /* AppDelegate.swift */,
 				062EBF461C0932210011BF25 /* ViewController.swift */,
 				0624F9791C0A2422008A062A /* English_Summer_Forest.jpg */,
+				066599F51C0B54BF00524FF9 /* splash2.png */,
 				0624F97F1C0A3F21008A062A /* splash.jpg */,
 				0624F97D1C0A337B008A062A /* English_Summer_Forest_blurred.jpeg */,
 				062EBF481C0932210011BF25 /* Main.storyboard */,
@@ -206,6 +209,7 @@
 				0624F9781C0A08A3008A062A /* Post.storyboard in Resources */,
 				117A1C471C0A134100C2DF59 /* Get.storyboard in Resources */,
 				0624F97E1C0A337B008A062A /* English_Summer_Forest_blurred.jpeg in Resources */,
+				066599F61C0B54BF00524FF9 /* splash2.png in Resources */,
 				062EBF4F1C0932210011BF25 /* LaunchScreen.storyboard in Resources */,
 				0624F9801C0A3F21008A062A /* splash.jpg in Resources */,
 				062EBF4C1C0932210011BF25 /* Assets.xcassets in Resources */,

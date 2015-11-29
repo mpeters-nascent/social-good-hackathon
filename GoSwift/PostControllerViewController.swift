@@ -19,6 +19,7 @@ class PostControllerViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
     
     @IBOutlet weak var sendingLabel: UILabel!
+    @IBOutlet weak var sendingLabel2: UILabel!
     @IBOutlet weak var postButton: UIButton!
     override func viewDidLoad() {
         
@@ -75,6 +76,8 @@ encouragement.layer.borderWidth = CGFloat(1.0)
     }
 
     @IBAction func postButtonClick(sender: UIButton) {
+        
+        
         UIView.animateWithDuration(1.0, animations: {
             self.postButton.alpha = 0.0
             self.encouragement.alpha = 0.0
@@ -86,24 +89,75 @@ encouragement.layer.borderWidth = CGFloat(1.0)
         //let seconds = 1.0
         //let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
         let dispatchTime1 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(1.0)))
-        let dispatchTime2 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(1.3)))
-        let dispatchTime3 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(1.6)))
-        let dispatchTime4 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(1.9)))
-        let dispatchTime5 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(2.2)))
-        let dispatchTime6 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(2.5)))
+        let dispatchTime2 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(1.8)))
+        let dispatchTime3 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(2.6)))
+        let dispatchTime4 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(3.4)))
+        let dispatchTime5 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(4.2)))
+        let dispatchTime6 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(5.0)))
+        let dispatchTime7 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(5.8)))
+        let dispatchTime8 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(6.5)))
+        let dispatchTime9 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(8.3)))
         
         dispatch_after(dispatchTime1, dispatch_get_main_queue(), {
-            UIView.animateWithDuration(0.3, animations: {
+            
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+                        UIView.animateWithDuration(0.8, animations: {
                 self.sendingLabel.alpha = 1.0
             })
         })
         dispatch_after(dispatchTime2, dispatch_get_main_queue(), {
-            UIView.animateWithDuration(0.3, animations: {
-                self.sendingLabel.textColor = UIColor.greenColor()
+            UIView.animateWithDuration(0.8, animations: {
+                self.sendingLabel.alpha = 0.0
+                self.sendingLabel2.alpha = 1.0
             })
         })
+        dispatch_after(dispatchTime3, dispatch_get_main_queue(), {
+              self.sendingLabel.textColor = UIColor.yellowColor()
+            UIView.animateWithDuration(0.8, animations: {
+                self.sendingLabel.alpha = 1.0
+                self.sendingLabel2.alpha = 0.0
+            })
+        })
+        dispatch_after(dispatchTime4, dispatch_get_main_queue(), {
+            self.sendingLabel2.textColor = UIColor.redColor()
+            UIView.animateWithDuration(0.8, animations: {
+                self.sendingLabel2.alpha = 1.0
+                self.sendingLabel.alpha = 0.0
+            })
+        })
+        dispatch_after(dispatchTime5, dispatch_get_main_queue(), {
+            self.sendingLabel.textColor = UIColor.purpleColor()
+            UIView.animateWithDuration(0.8, animations: {
+                self.sendingLabel.alpha = 1.0
+                self.sendingLabel2.alpha = 0.0
+            })
+        })
+        dispatch_after(dispatchTime6, dispatch_get_main_queue(), {
+            self.sendingLabel2.textColor = UIColor.blueColor()
+            UIView.animateWithDuration(0.8, animations: {
+                self.sendingLabel2.alpha = 1.0
+                self.sendingLabel.alpha = 0.0
+            })
+        })
+        dispatch_after(dispatchTime7, dispatch_get_main_queue(), {UIView.animateWithDuration(0.5, animations: {
+                self.sendingLabel2.alpha = 0.0
+                self.sendingLabel.alpha = 0.0
+            })
+        })
+        dispatch_after(dispatchTime8, dispatch_get_main_queue(), {
+            self.sendingLabel.text = "Shared!"
+            self.sendingLabel.textColor = UIColor.whiteColor()
+                UIView.animateWithDuration(0.3, animations: {
+            self.sendingLabel.alpha = 1.0
+        })
+        })
         
-        //navigationController?.popViewControllerAnimated(true)
+        dispatch_after(dispatchTime9, dispatch_get_main_queue(), {
+            self.navigationController?.popViewControllerAnimated(true)
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+        })
+        
+        
     }
     
     // MARK: - Navigation

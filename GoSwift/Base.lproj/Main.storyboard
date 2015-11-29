@@ -35,8 +35,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uod-wz-D6U">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="441"/>
-                                <animations/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="420"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Afb-1v-il6">
@@ -51,12 +50,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWy-fn-Jpj">
-                                <rect key="frame" x="145" y="461" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWy-fn-Jpj">
+                                <rect key="frame" x="149" y="518" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Get"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="xyx-D4-stM" kind="show" identifier="get" id="Lv7-qN-qM0"/>
+                                    <action selector="changeLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYg-dl-Yf2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,6 +65,12 @@
                             <constraint firstAttribute="leadingMargin" secondItem="uWy-fn-Jpj" secondAttribute="leading" id="Jfa-6i-tgZ"/>
                             <constraint firstItem="uWy-fn-Jpj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="vOw-9C-p19"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Jfa-6i-tgZ"/>
+                                <exclude reference="vOw-9C-p19"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Shareapy" id="1VV-VY-IfH">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Qsi-8B-tA0"/>

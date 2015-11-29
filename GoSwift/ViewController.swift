@@ -26,6 +26,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func goNavButtonPressed(sender: AnyObject) {
+        let getView = storyboard!.instantiateViewControllerWithIdentifier("get")
+        self.navigationController?.pushViewController(getView, animated: true)
+    }
 
     @IBAction func navButtonPressed(sender: AnyObject) {
 //        let postView = storyboard!.instantiateViewControllerWithIdentifier("post")

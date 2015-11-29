@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Alamofire
+//import Alamofire
 
 internal class WeatherService {
     
@@ -20,9 +20,9 @@ internal class WeatherService {
     
     internal func getWeatherForCity(city: String, completion: (weather: String) -> Void)
     {
-        Alamofire.request(.GET, BaseUrl, parameters: ["q": city, "appid": APIKey, "units":"metric"]).responseJSON(completionHandler: {
-            response in
-            print("\(response)ssa")
-        })
+//        Alamofire.request(.GET, BaseUrl, parameters: ["q": city, "appid": APIKey, "units":"metric"]).responseJSON(completionHandler: {
+//            response in
+//            print("\(response)ssa")
+//        })
     }
 }

@@ -1,11 +1,3 @@
-//
-//  GetViewController.swift
-//  GoSwift
-//
-//  Created by Alexander Di Battista on 2015-11-28.
-//  Copyright © 2015 Marc Peters. All rights reserved.
-//
-
 import UIKit
 
 class GetViewController: UIViewController {
@@ -13,8 +5,27 @@ class GetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let filePath = NSBundle.mainBundle().pathForResource("stories",ofType:"json")
+        let optData =  NSData(contentsOfFile:filePath!)
+        
+        var names = [String]()
+
+        do {
+            let json = try NSJSONSerialization.JSONObjectWithData(optData!, options: .AllowFragments)
+            
+            if let blogs = json["stories"] as? [[String: AnyObject]] {
+                for blog in blogs {
+                    if let name = blog["name"] as? String {
+                        names.append(name)
+                    }
+                }
+            }
+        } catch {
+            print("error serializing JSON: \(error)")
+        }
+
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

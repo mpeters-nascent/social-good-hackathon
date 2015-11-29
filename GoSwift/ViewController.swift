@@ -27,36 +27,5 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func goNavButtonPressed(sender: AnyObject) {
-        let getView = storyboard!.instantiateViewControllerWithIdentifier("get")
-        self.navigationController?.pushViewController(getView, animated: true)
-    }
-
-    @IBAction func navButtonPressed(sender: AnyObject) {
-//        let postView = storyboard!.instantiateViewControllerWithIdentifier("post")
-//        self.navigationController?.pushViewController(postView, animated: true)
-    }
-    
-    @IBAction func changeLabelText(sender: AnyObject) {
-        let button = sender as? UIButton
-        button?.tintColor = UIColor.redColor()
-        
-        if let buttonB = sender as? UIButton {
-            buttonB.tintColor=UIColor.greenColor()
-        }
-        
-        guard let buttonC = sender as? UIButton else {
-            return;
-        }
-        
-        buttonC.tintColor = UIColor.orangeColor()
-        myFirstLabel.text = randomWords[counter]
-        counter++
-        if counter >= randomWords.count {
-            counter = 0
-        }
-        
-    }
-    
 }
 

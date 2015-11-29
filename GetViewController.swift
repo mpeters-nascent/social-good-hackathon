@@ -1,6 +1,8 @@
 import UIKit
 
 class GetViewController: UIViewController {
+    
+    @IBOutlet weak var messageLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -8,7 +10,7 @@ class GetViewController: UIViewController {
         let filePath = NSBundle.mainBundle().pathForResource("stories",ofType:"json")
         let optData =  NSData(contentsOfFile:filePath!)
         
-        var names = [String]()
+        var stories = [String]()
 
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(optData!, options: .AllowFragments)
@@ -16,13 +18,18 @@ class GetViewController: UIViewController {
             if let blogs = json["stories"] as? [[String: AnyObject]] {
                 for blog in blogs {
                     if let name = blog["name"] as? String {
-                        names.append(name)
+                        stories.append(name)
                     }
                 }
             }
         } catch {
             print("error serializing JSON: \(error)")
         }
+        
+        
+        let randomIndex = Int(arc4random_uniform(UInt32(stories.count)))
+        
+        messageLabel.text = stories[randomIndex]
 
     }
 

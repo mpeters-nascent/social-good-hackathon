@@ -33,16 +33,6 @@
                                     <action selector="postButtonClick:" destination="YJT-mC-QcW" eventType="touchUpInside" id="71f-zm-SlG"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyr-27-prp">
-                                <rect key="frame" x="37" y="120" width="300" height="160"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="fkc-TI-Bmy"/>
-                                    <constraint firstAttribute="width" constant="300" id="pAk-Zo-YLv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share something good that you saw today:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFX-8i-Gm2">
                                 <rect key="frame" x="37" y="70" width="300" height="42"/>
                                 <constraints>
@@ -53,8 +43,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something about yourself that you don't feel you have in common with other people:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C74-Qv-zRg">
-                                <rect key="frame" x="37" y="338" width="300" height="63"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Something that most people don't know about you:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C74-Qv-zRg">
+                                <rect key="frame" x="37" y="352" width="300" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="25C-JS-fil"/>
                                     <constraint firstAttribute="width" constant="300" id="n3x-Rg-X2u"/>
@@ -73,10 +63,27 @@
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending your thoughts to a friend..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUM-CS-e0S">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sharing your thoughts..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUM-CS-e0S">
                                 <rect key="frame" x="45.5" y="323.5" width="283" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="0.42543347992549962" green="0.65634611070049886" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyr-27-prp">
+                                <rect key="frame" x="37" y="120" width="300" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="fkc-TI-Bmy"/>
+                                    <constraint firstAttribute="width" constant="300" id="pAk-Zo-YLv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sharing your thoughts..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKm-Xb-0gM">
+                                <rect key="frame" x="46" y="323" width="283" height="20.5"/>
+                                <color key="tintColor" red="0.26755720568886698" green="1" blue="0.29868465867298533" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.28478861794857935" green="1" blue="0.21406411987040674" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -85,9 +92,11 @@
                             <constraint firstItem="Fyr-27-prp" firstAttribute="centerX" secondItem="Y50-tI-S2R" secondAttribute="centerX" id="1qx-fi-yvH"/>
                             <constraint firstItem="aUM-CS-e0S" firstAttribute="centerY" secondItem="iMG-su-57n" secondAttribute="centerY" id="41j-4G-HM5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iMG-su-57n" secondAttribute="trailing" constant="-20" id="7L9-Jr-cdi"/>
+                            <constraint firstItem="mKm-Xb-0gM" firstAttribute="centerX" secondItem="iMG-su-57n" secondAttribute="centerX" id="CJm-v3-aHc"/>
                             <constraint firstItem="OFX-8i-Gm2" firstAttribute="leading" secondItem="Fyr-27-prp" secondAttribute="leading" id="CkS-GC-T06"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fyr-27-prp" secondAttribute="trailing" constant="100" id="EvQ-IC-zmI"/>
                             <constraint firstItem="ZsQ-TI-1Un" firstAttribute="top" secondItem="C74-Qv-zRg" secondAttribute="bottom" constant="8" id="HKZ-Ed-5jB"/>
+                            <constraint firstItem="mKm-Xb-0gM" firstAttribute="centerY" secondItem="iMG-su-57n" secondAttribute="centerY" id="Qk8-VP-qGx"/>
                             <constraint firstItem="Fyr-27-prp" firstAttribute="top" secondItem="oy9-rk-eVT" secondAttribute="bottom" constant="100" id="QqL-YR-aHc"/>
                             <constraint firstItem="Fyr-27-prp" firstAttribute="centerY" secondItem="Y50-tI-S2R" secondAttribute="centerY" id="V03-Dx-WLs"/>
                             <constraint firstItem="iMG-su-57n" firstAttribute="top" secondItem="Y50-tI-S2R" secondAttribute="top" id="WAb-pz-91b"/>
@@ -130,6 +139,7 @@
                         <outlet property="postButton" destination="gfx-ol-pxr" id="gWm-cB-WwE"/>
                         <outlet property="postView" destination="Y50-tI-S2R" id="m2f-7X-ptT"/>
                         <outlet property="sendingLabel" destination="aUM-CS-e0S" id="sKU-XG-wSR"/>
+                        <outlet property="sendingLabel2" destination="mKm-Xb-0gM" id="zr6-hF-gnE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hZ-3x-LlT" userLabel="First Responder" sceneMemberID="firstResponder"/>

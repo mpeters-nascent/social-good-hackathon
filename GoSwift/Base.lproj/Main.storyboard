@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Shareapy-->
@@ -18,71 +17,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWy-fn-Jpj">
-                                <rect key="frame" x="264" y="494" width="30" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Get"/>
-                                <connections>
-                                    <segue destination="xyx-D4-stM" kind="show" identifier="get" id="4jJ-ye-HUe"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evq-j1-c9p">
-                                <rect key="frame" x="26" y="494" width="118" height="30"/>
+                                <rect key="frame" x="80" y="153" width="160" height="50"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="C8H-IQ-PYy"/>
+                                    <constraint firstAttribute="width" constant="160" id="VPf-Cc-ch8"/>
+                                </constraints>
                                 <state key="normal" title="Share Something"/>
                                 <connections>
                                     <segue destination="WhS-TO-07u" kind="show" identifier="post" id="gOf-8Y-BG3"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uod-wz-D6U">
-                                <rect key="frame" x="16" y="64" width="288" height="420"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWy-fn-Jpj">
+                                <rect key="frame" x="80" y="303" width="160" height="50"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="420" id="FKl-8O-Tmc"/>
+                                    <constraint firstAttribute="height" constant="50" id="F1X-gl-6jh"/>
+                                    <constraint firstAttribute="width" constant="160" id="HxN-Np-yhZ"/>
                                 </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Afb-1v-il6">
-                                        <rect key="frame" x="0.0" y="92" width="288" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Afb-1v-il6" id="qhq-WE-wlH">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                <state key="normal" title="See Something"/>
+                                <connections>
+                                    <segue destination="xyx-D4-stM" kind="show" identifier="get" id="4jJ-ye-HUe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="uWy-fn-Jpj" secondAttribute="trailing" constant="10" id="BaM-q4-Xgf"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="uWy-fn-Jpj" secondAttribute="leading" id="Jfa-6i-tgZ"/>
-                            <constraint firstItem="evq-j1-c9p" firstAttribute="top" secondItem="Uod-wz-D6U" secondAttribute="bottom" constant="10" id="KoJ-OL-iz2"/>
-                            <constraint firstItem="evq-j1-c9p" firstAttribute="baseline" secondItem="uWy-fn-Jpj" secondAttribute="baseline" id="ShC-as-bOU"/>
-                            <constraint firstItem="Uod-wz-D6U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YF3-vA-0kv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Uod-wz-D6U" secondAttribute="trailing" id="gNW-5w-Tk8"/>
-                            <constraint firstItem="evq-j1-c9p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="nal-JI-1ci"/>
-                            <constraint firstItem="Uod-wz-D6U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oa7-Fj-6hv"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uod-wz-D6U" secondAttribute="bottom" constant="84" id="rzx-rt-Wmo"/>
-                            <constraint firstItem="uWy-fn-Jpj" firstAttribute="top" secondItem="Uod-wz-D6U" secondAttribute="bottom" constant="10" id="vJf-iZ-N10"/>
-                            <constraint firstItem="uWy-fn-Jpj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="vOw-9C-p19"/>
+                            <constraint firstItem="uWy-fn-Jpj" firstAttribute="top" secondItem="evq-j1-c9p" secondAttribute="bottom" constant="100" id="bb7-eN-yNt"/>
+                            <constraint firstItem="uWy-fn-Jpj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fy4-5F-wSC"/>
+                            <constraint firstItem="evq-j1-c9p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="wgw-dY-hTN"/>
+                            <constraint firstItem="evq-j1-c9p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wsb-vz-WTI"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Jfa-6i-tgZ"/>
-                                <exclude reference="vJf-iZ-N10"/>
-                                <exclude reference="vOw-9C-p19"/>
-                                <exclude reference="rzx-rt-Wmo"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Shareapy" id="1VV-VY-IfH">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Qsi-8B-tA0"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="seeButton" destination="uWy-fn-Jpj" id="NWe-Gq-5dA"/>
+                        <outlet property="shareButton" destination="evq-j1-c9p" id="QtX-JV-m09"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

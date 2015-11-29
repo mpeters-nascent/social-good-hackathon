@@ -145,7 +145,7 @@ encouragement.layer.borderWidth = CGFloat(1.0)
             })
         })
         dispatch_after(dispatchTime8, dispatch_get_main_queue(), {
-            self.sendingLabel.text = "Shared!"
+            self.sendingLabel.text = "Shared!\n\nSomeone will receive your message\ntomorrow"
             self.sendingLabel.textColor = UIColor.whiteColor()
                 UIView.animateWithDuration(0.3, animations: {
             self.sendingLabel.alpha = 1.0

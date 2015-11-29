@@ -13,17 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var seeButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
     
-    @IBOutlet weak var splashImage: UIImageView!
-    @IBOutlet weak var shareCounter: UIButton!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
+        //self.navigationController?.setNavigationBarHidden(false, animated: true)
+        // Do any additional setup after loading the view, typically from a nib.
+=======
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-
         
- 
+        
         seeButton.backgroundColor = UIColor.whiteColor()
         seeButton.layer.borderWidth = 2
         seeButton.layer.borderColor = UIColor.grayColor().CGColor
@@ -35,23 +33,8 @@ class ViewController: UIViewController {
         shareButton.layer.borderColor = UIColor.grayColor().CGColor
         shareButton.layer.cornerRadius = 4
         shareButton.titleEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-        
-        shareCounter.layer.cornerRadius = CGFloat(10)
-        
-        let dispatchTime1 = dispatch_time(DISPATCH_TIME_NOW, Int64(getDelay(3.0)))
-        
-        dispatch_after(dispatchTime1, dispatch_get_main_queue(), {
-            
-            self.navigationController?.setNavigationBarHidden(false, animated: true)
-            UIView.animateWithDuration(0.8, animations: {
-                self.splashImage.alpha = 0.0
-            })
-        })
-    }
-    
-    func getDelay(seconds: Double)-> Double
-    {
-        return seconds * Double(NSEC_PER_SEC)
+
+>>>>>>> 3541bb1cea36c5e19b62470b66104a70a340b23f
     }
     
 }

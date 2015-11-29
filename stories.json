@@ -2,22 +2,35 @@
     "stories" : [
                  {
         "name": "Hello World",
-        "location": "Kentucky, USA",
-        "encouragement": "Test",
-        "embarrassment": "Test"
+        "location": "Lexington, KY, USA",
+        "encouragement": "The cute girl that works on the floor above me said hello to me in the elevator today",
+        "embarrassment": "I don't like casual conversation because I don't see the point, but I am afraid that people won't want to talk to me because of it"
     },
     {
        "name": "Hello World2",
         "location": "Kelowna, BC, Canada",
-        "encouragement": "Test",
-        "embarrassment": "Test"
+        "encouragement": "A taxi driver stopped to let me cross the street, even though he had the right of way",
+        "embarrassment": "Whenever I look in the mirror, I only see things that need to be improved"
     },
     {
         "name": "Hello World3",
-        "location": "Worcestershire, UK",
-        "encouragement": "Test",
-        "embarrassment": "Test"
-    }
+        "location": "Worcestershire, England",
+        "encouragement": "I saw a group of people giving free hugs downtown",
+        "embarrassment": "I think I might drink too much, but I'm afraid that my friends won't want to hang out with me if I stop"
+    },
+     {
+     "name": "Hello World4",
+     "location": "Kilmaine, Ireland",
+     "encouragement": "I saw a group of people giving free hugs downtown",
+     "embarrassment": "I think I might drink too much, but I'm afraid that my friends won't want to hang out with me if I stop"
+     },
+     {
+     "name": "Hello World6",
+     "location": "Burlington, VT, USA",
+     "encouragement": "We got a dog today and I am so happy to have a friend",
+     "embarrassment": "When I watch the news, I get depressed"
+     },
+                 
    ]
 
 }

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Shareapy-->
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evq-j1-c9p">
-                                <rect key="frame" x="80" y="204" width="160" height="50"/>
+                                <rect key="frame" x="80" y="153" width="160" height="50"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="C8H-IQ-PYy"/>
@@ -31,43 +30,40 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWy-fn-Jpj">
-                                <rect key="frame" x="80" y="354" width="160" height="50"/>
+                                <rect key="frame" x="80" y="303" width="160" height="50"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="F1X-gl-6jh"/>
                                     <constraint firstAttribute="width" constant="160" id="HxN-Np-yhZ"/>
                                 </constraints>
-                                <state key="normal" title="Hear Something"/>
+<<<<<<< HEAD
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Afb-1v-il6">
+                                        <rect key="frame" x="0.0" y="28" width="288" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Afb-1v-il6" id="qhq-WE-wlH">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+=======
+                                <state key="normal" title="See Something"/>
                                 <connections>
                                     <segue destination="xyx-D4-stM" kind="show" identifier="get" id="4jJ-ye-HUe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXw-HB-X1t">
-                                <rect key="frame" x="223" y="369" width="30" height="20"/>
-                                <color key="backgroundColor" red="1" green="0.2295662943" blue="0.269754577" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="1PI-Qx-sTZ"/>
-                                </constraints>
-                                <state key="normal" title=" 1 ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash2.png" translatesAutoresizingMaskIntoConstraints="NO" id="YpU-jr-JlP">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
-                            </imageView>
+>>>>>>> 3541bb1cea36c5e19b62470b66104a70a340b23f
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.67047921733724758" green="0.83391154749200325" blue="0.94193892045454541" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
-                            <constraint firstItem="YXw-HB-X1t" firstAttribute="centerY" secondItem="uWy-fn-Jpj" secondAttribute="centerY" id="8nb-y1-mGc"/>
-                            <constraint firstItem="uWy-fn-Jpj" firstAttribute="leading" secondItem="YXw-HB-X1t" secondAttribute="trailing" constant="-173" id="COq-s9-ySe"/>
-                            <constraint firstItem="YpU-jr-JlP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LaW-KA-7Vs"/>
-                            <constraint firstItem="YpU-jr-JlP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="TD9-jE-IXH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YpU-jr-JlP" secondAttribute="trailing" constant="-20" id="Xgl-Gy-gqE"/>
                             <constraint firstItem="uWy-fn-Jpj" firstAttribute="top" secondItem="evq-j1-c9p" secondAttribute="bottom" constant="100" id="bb7-eN-yNt"/>
                             <constraint firstItem="uWy-fn-Jpj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fy4-5F-wSC"/>
-                            <constraint firstItem="YpU-jr-JlP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="r3I-Ho-NZT"/>
-                            <constraint firstItem="evq-j1-c9p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="wgw-dY-hTN"/>
+                            <constraint firstItem="evq-j1-c9p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="wgw-dY-hTN"/>
                             <constraint firstItem="evq-j1-c9p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wsb-vz-WTI"/>
                         </constraints>
                     </view>
@@ -78,8 +74,6 @@
                     <connections>
                         <outlet property="seeButton" destination="uWy-fn-Jpj" id="NWe-Gq-5dA"/>
                         <outlet property="shareButton" destination="evq-j1-c9p" id="QtX-JV-m09"/>
-                        <outlet property="shareCounter" destination="YXw-HB-X1t" id="tLy-aA-uYE"/>
-                        <outlet property="splashImage" destination="YpU-jr-JlP" id="eCE-NP-Det"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -122,7 +116,4 @@
             <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="splash2.png" width="800" height="1400"/>
-    </resources>
 </document>

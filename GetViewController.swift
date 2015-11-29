@@ -4,6 +4,7 @@ class GetViewController: UIViewController {
 
     @IBOutlet weak var splashImage: UIImageView!
     @IBOutlet weak var splashButton: UIButton!
+    @IBOutlet weak var okButton: UIButton!
     @IBOutlet weak var newMessageLabel: UILabel!
     @IBOutlet weak var locationLabel1: UILabel!
     @IBOutlet weak var encouragementLabel: UILabel!
@@ -12,8 +13,10 @@ class GetViewController: UIViewController {
         super.viewDidLoad()
 
         splashButton.layer.cornerRadius = CGFloat(15)
+        okButton.layer.cornerRadius = CGFloat(15)
         embarrassmentLabel.alpha = 0.0
         encouragementLabel.alpha = 0.0
+        okButton.alpha = 0.0
         
         let filePath = NSBundle.mainBundle().pathForResource("stories",ofType:"json")
         let optData =  NSData(contentsOfFile:filePath!)
@@ -64,13 +67,14 @@ class GetViewController: UIViewController {
             self.locationLabel1.alpha = 0.0
             self.encouragementLabel.alpha = 1.0
             self.embarrassmentLabel.alpha = 1.0
+            self.okButton.alpha = 1.0
         })
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func okButton(sender: UIButton) {
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
 
